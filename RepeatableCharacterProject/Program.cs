@@ -11,7 +11,7 @@ namespace RepeatableCharacterProject
             var anagram = new AnagramTest();
             Console.WriteLine($"anagram result: {anagram.AnagramCheck("ABCD", "CBDA$")}");
             
-            // Finding sub array
+            // Finding sub array.
             RunUnitTestCases("Case_When_SubArray_With_Total_Zero_Present", new[] {4, 2, -3, 1, 6}, true);
             RunUnitTestCases("Case_When_SubArray_Contains_Zero_Number", new[] {4, 2, 0, 1, 6}, true);
             RunUnitTestCases("Case_When_SubArray_IsNotPresent_With_TotalZero", new[] {4, 2, 1, 1, 6}, false);
