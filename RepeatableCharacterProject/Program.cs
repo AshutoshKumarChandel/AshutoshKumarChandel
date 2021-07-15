@@ -7,9 +7,11 @@ namespace RepeatableCharacterProject
     {
         static void Main(string[] args)
         {
+            // Anagram test
             var anagram = new AnagramTest();
             Console.WriteLine($"anagram result: {anagram.AnagramCheck("ABCD", "CBDA$")}");
             
+            // Finding sub array
             RunUnitTestCases("Case_When_SubArray_With_Total_Zero_Present", new[] {4, 2, -3, 1, 6}, true);
             RunUnitTestCases("Case_When_SubArray_Contains_Zero_Number", new[] {4, 2, 0, 1, 6}, true);
             RunUnitTestCases("Case_When_SubArray_IsNotPresent_With_TotalZero", new[] {4, 2, 1, 1, 6}, false);
@@ -17,6 +19,7 @@ namespace RepeatableCharacterProject
             RunUnitTestCases("Case_When_Only_Zero_Is_Present_Latest", new[] {0, 1}, true);
             RunUnitTestCases("Case_When_No_inputs_given", new int[]{}, false);
 
+            // Repeatable character test
             Console.WriteLine(GetFirstRepeatableCharacter("ABCBCA"));
             Case_When_Atleast_One_Repeatable_Character();
             Case_When_Atleast_No_Repeatable_Character();
